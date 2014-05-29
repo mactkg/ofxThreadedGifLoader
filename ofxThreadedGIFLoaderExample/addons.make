@@ -1,0 +1,2 @@
+ofxGif
+ofxThreadedGIFLoader
