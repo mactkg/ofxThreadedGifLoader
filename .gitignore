@@ -10,4 +10,4 @@ xcuserdata
 obj/
 bin/
 build/
-!data/
+!bin/data/
