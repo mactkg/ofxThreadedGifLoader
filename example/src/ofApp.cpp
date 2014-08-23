@@ -11,17 +11,11 @@ void ofApp::setup(){
 }
 
 //--------------------------------------------------------------
-void ofApp::update(){
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::draw(){	
-	cnt++;
+void ofApp::draw(){
 	// draw the images.
 	ofSetColor(255);
 	for(int i = 0; i < (int)gifs.size(); ++i) {
-		gifs[i].drawFrame(cnt%gifs[i].getNumFrames(), 180*i, 20);
+		gifs[i].drawFrame(playCnt%gifs[i].getNumFrames(), 0, 240*i+40, 360, 240);
 	}	
 	
 	// draw the FPS
@@ -29,6 +23,9 @@ void ofApp::draw(){
 
 	ofSetColor(0);
 	ofDrawBitmapString(ofToString(ofGetFrameRate(),0),5,ofGetHeight()-5);
+	ofDrawBitmapString(ofToString("Press space key to load",0), 5, 20);
+    
+    playCnt++;
 }
 
 //--------------------------------------------------------------
@@ -41,52 +38,11 @@ void ofApp::keyPressed(int key){
     if (key == ' ') {
         int total = 2;
         for(int i = 0; i < total; ++i) {
-            ofLogNotice() << "hi";
             loader.loadFromDisk("view" + ofToString(i) + ".gif");
         }
     } else if (key == 'd') {
         gifs.pop_back();
     }
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
 }
 
 //--------------------------------------------------------------

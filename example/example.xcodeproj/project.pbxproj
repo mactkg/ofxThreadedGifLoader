@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37260A8419351C6F009C3044 /* ofxGifFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37260A8219351C6F009C3044 /* ofxGifFrame.cpp */; };
-		37260A8919351D12009C3044 /* ofxThreadedGIFDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37260A8519351D12009C3044 /* ofxThreadedGIFDecoder.cpp */; };
-		37260A8A19351D12009C3044 /* ofxThreadedGIFFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37260A8719351D12009C3044 /* ofxThreadedGIFFile.cpp */; };
-		37260A8D19351D57009C3044 /* ofxThreadedGIFLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37260A8B19351D57009C3044 /* ofxThreadedGIFLoader.cpp */; };
+		37E9DE4319A8721700C6D9DC /* ofxGifFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E9DE3819A8721700C6D9DC /* ofxGifFrame.cpp */; };
+		37E9DE4419A8721700C6D9DC /* ofxThreadedGifDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E9DE3A19A8721700C6D9DC /* ofxThreadedGifDecoder.cpp */; };
+		37E9DE4519A8721700C6D9DC /* ofxThreadedGifFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E9DE3C19A8721700C6D9DC /* ofxThreadedGifFile.cpp */; };
+		37E9DE4619A8721700C6D9DC /* ofxThreadedGifLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37E9DE3E19A8721700C6D9DC /* ofxThreadedGifLoader.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -63,14 +63,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		37260A8219351C6F009C3044 /* ofxGifFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxGifFrame.cpp; path = src/ofxGifFrame.cpp; sourceTree = "<group>"; };
-		37260A8319351C6F009C3044 /* ofxGifFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxGifFrame.h; path = src/ofxGifFrame.h; sourceTree = "<group>"; };
-		37260A8519351D12009C3044 /* ofxThreadedGIFDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxThreadedGIFDecoder.cpp; path = src/ofxThreadedGIFDecoder.cpp; sourceTree = "<group>"; };
-		37260A8619351D12009C3044 /* ofxThreadedGIFDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxThreadedGIFDecoder.h; path = src/ofxThreadedGIFDecoder.h; sourceTree = "<group>"; };
-		37260A8719351D12009C3044 /* ofxThreadedGIFFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxThreadedGIFFile.cpp; path = src/ofxThreadedGIFFile.cpp; sourceTree = "<group>"; };
-		37260A8819351D12009C3044 /* ofxThreadedGIFFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxThreadedGIFFile.h; path = src/ofxThreadedGIFFile.h; sourceTree = "<group>"; };
-		37260A8B19351D57009C3044 /* ofxThreadedGIFLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxThreadedGIFLoader.cpp; path = src/ofxThreadedGIFLoader.cpp; sourceTree = "<group>"; };
-		37260A8C19351D57009C3044 /* ofxThreadedGIFLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxThreadedGIFLoader.h; path = src/ofxThreadedGIFLoader.h; sourceTree = "<group>"; };
+		37E9DE3819A8721700C6D9DC /* ofxGifFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGifFrame.cpp; sourceTree = "<group>"; };
+		37E9DE3919A8721700C6D9DC /* ofxGifFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGifFrame.h; sourceTree = "<group>"; };
+		37E9DE3A19A8721700C6D9DC /* ofxThreadedGifDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxThreadedGifDecoder.cpp; sourceTree = "<group>"; };
+		37E9DE3B19A8721700C6D9DC /* ofxThreadedGifDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxThreadedGifDecoder.h; sourceTree = "<group>"; };
+		37E9DE3C19A8721700C6D9DC /* ofxThreadedGifFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxThreadedGifFile.cpp; sourceTree = "<group>"; };
+		37E9DE3D19A8721700C6D9DC /* ofxThreadedGifFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxThreadedGifFile.h; sourceTree = "<group>"; };
+		37E9DE3E19A8721700C6D9DC /* ofxThreadedGifLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxThreadedGifLoader.cpp; sourceTree = "<group>"; };
+		37E9DE3F19A8721700C6D9DC /* ofxThreadedGifLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxThreadedGifLoader.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -81,7 +81,7 @@
 		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		E4B69B5B0A3A1756003C02F2 /* ofxThreadedGIFLoaderExampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofxThreadedGIFLoaderExampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* ofxThreadedGIFLoaderExampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ofxThreadedGIFLoaderExampleDebug.app; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
@@ -123,19 +123,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17271AC8ADE6A937E5F060B6 /* ofxThreadedGIFLoader */ = {
+		37E9DE1F19A8721700C6D9DC /* ofxThreadedGIFLoader */ = {
 			isa = PBXGroup;
 			children = (
-				E6FA0277A12538B4F6F189A8 /* src */,
+				37E9DE3719A8721700C6D9DC /* src */,
 			);
 			name = ofxThreadedGIFLoader;
 			path = ..;
 			sourceTree = "<group>";
 		};
+		37E9DE3719A8721700C6D9DC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				37E9DE3819A8721700C6D9DC /* ofxGifFrame.cpp */,
+				37E9DE3919A8721700C6D9DC /* ofxGifFrame.h */,
+				37E9DE3A19A8721700C6D9DC /* ofxThreadedGifDecoder.cpp */,
+				37E9DE3B19A8721700C6D9DC /* ofxThreadedGifDecoder.h */,
+				37E9DE3C19A8721700C6D9DC /* ofxThreadedGifFile.cpp */,
+				37E9DE3D19A8721700C6D9DC /* ofxThreadedGifFile.h */,
+				37E9DE3E19A8721700C6D9DC /* ofxThreadedGifLoader.cpp */,
+				37E9DE3F19A8721700C6D9DC /* ofxThreadedGifLoader.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				17271AC8ADE6A937E5F060B6 /* ofxThreadedGIFLoader */,
+				37E9DE1F19A8721700C6D9DC /* ofxThreadedGIFLoader */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -218,27 +233,12 @@
 			name = openFrameworks;
 			sourceTree = "<group>";
 		};
-		E6FA0277A12538B4F6F189A8 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				37260A8B19351D57009C3044 /* ofxThreadedGIFLoader.cpp */,
-				37260A8C19351D57009C3044 /* ofxThreadedGIFLoader.h */,
-				37260A8519351D12009C3044 /* ofxThreadedGIFDecoder.cpp */,
-				37260A8619351D12009C3044 /* ofxThreadedGIFDecoder.h */,
-				37260A8719351D12009C3044 /* ofxThreadedGIFFile.cpp */,
-				37260A8819351D12009C3044 /* ofxThreadedGIFFile.h */,
-				37260A8219351C6F009C3044 /* ofxGifFrame.cpp */,
-				37260A8319351C6F009C3044 /* ofxGifFrame.h */,
-			);
-			name = src;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* ofxThreadedGIFLoaderExample */ = {
+		E4B69B5A0A3A1756003C02F2 /* example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ofxThreadedGIFLoaderExample" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -250,7 +250,7 @@
 			dependencies = (
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
-			name = ofxThreadedGIFLoaderExample;
+			name = example;
 			productName = myOFApp;
 			productReference = E4B69B5B0A3A1756003C02F2 /* ofxThreadedGIFLoaderExampleDebug.app */;
 			productType = "com.apple.product-type.application";
@@ -263,7 +263,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofxThreadedGIFLoaderExample" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -284,7 +284,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* ofxThreadedGIFLoaderExample */,
+				E4B69B5A0A3A1756003C02F2 /* example */,
 			);
 		};
 /* End PBXProject section */
@@ -320,12 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37260A8419351C6F009C3044 /* ofxGifFrame.cpp in Sources */,
-				37260A8919351D12009C3044 /* ofxThreadedGIFDecoder.cpp in Sources */,
+				37E9DE4319A8721700C6D9DC /* ofxGifFrame.cpp in Sources */,
+				37E9DE4619A8721700C6D9DC /* ofxThreadedGifLoader.cpp in Sources */,
+				37E9DE4519A8721700C6D9DC /* ofxThreadedGifFile.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-				37260A8A19351D12009C3044 /* ofxThreadedGIFFile.cpp in Sources */,
+				37E9DE4419A8721700C6D9DC /* ofxThreadedGifDecoder.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				37260A8D19351D57009C3044 /* ofxThreadedGIFLoader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +597,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofxThreadedGIFLoaderExample" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -606,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ofxThreadedGIFLoaderExample" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,
