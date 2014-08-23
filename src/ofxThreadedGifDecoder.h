@@ -10,7 +10,7 @@
 
 //#pragma once
 #include "ofMain.h"
-#include "ofxThreadedGIFFile.h"
+#include "ofxThreadedGifFile.h"
 
 #include "FreeImage.h"
 

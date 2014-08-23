@@ -24,7 +24,7 @@ public:
     // for user
     void setFromPixels(ofPixels _px , int _left , int _top, float _duration = 0.f);
     // for ofxGifFile 
-    void setFromGifPixels(ofPixels _constructedPx, ofPixels &_rawPx , int _left , int _top, float _duration = 0.f);
+    void setFromGifPixels(ofPixels _constructedPx, ofPixels _rawPx , int _left , int _top, float _duration = 0.f);
     void draw(float _x, float _y);
     void draw(float _x, float _y, int _w, int _h);
     ofPixels * 	getRawPixels();

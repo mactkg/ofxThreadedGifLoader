@@ -9,8 +9,8 @@
 #include "ofURLFileLoader.h"
 #include "ofTypes.h"
 
-#include "ofxThreadedGIFDecoder.h"
-#include "ofxThreadedGIFFile.h"
+#include "ofxThreadedGifDecoder.h"
+#include "ofxThreadedGifFile.h"
 #include "ofxGifFrame.h"
 
 // must use poco condition not lock for this
@@ -18,10 +18,10 @@
 
 using namespace std;
 
-class ofxThreadedGIFLoader : public ofThread {
+class ofxThreadedGifLoader : public ofThread {
 public:
-    ofxThreadedGIFLoader();
-    ~ofxThreadedGIFLoader();
+    ofxThreadedGifLoader();
+    ~ofxThreadedGifLoader();
 
 	void loadFromDisk(string file);
 	//void loadFromURL(ofxGifFile& gif, string url);
@@ -41,14 +41,14 @@ private:
     
     
     // Entry to load.
-    struct ofxGIFLoaderEntry {
-        ofxGIFLoaderEntry() {
+    struct ofxGifLoaderEntry {
+        ofxGifLoaderEntry() {
             //gif = NULL;
             type = OF_LOAD_FROM_DISK;
             id=0;
         }
         
-        ofxGIFLoaderEntry(ofLoaderType nType) {
+        ofxGifLoaderEntry(ofLoaderType nType) {
             type = nType;
             id=0;
         }
@@ -62,7 +62,7 @@ private:
     
     ofxThreadedGifDecoder decoder;
 
-    typedef deque<ofxGIFLoaderEntry>::iterator entry_iterator;
+    typedef deque<ofxGifLoaderEntry>::iterator entry_iterator;
 	entry_iterator      getEntryFromAsyncQueue(string name);
 
 	int                 nextID;
@@ -71,9 +71,9 @@ private:
 
     int                 lastUpdate;
 
-	deque<ofxGIFLoaderEntry> images_async_loading; // keeps track of images which are loading async
-	deque<ofxGIFLoaderEntry> images_to_load_buffer;
-    deque<ofxGIFLoaderEntry> images_to_update;
+	deque<ofxGifLoaderEntry> images_async_loading; // keeps track of images which are loading async
+	deque<ofxGifLoaderEntry> images_to_load_buffer;
+    deque<ofxGifLoaderEntry> images_to_update;
     vector<string> working_filenames;
 };
 

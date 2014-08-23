@@ -18,26 +18,22 @@ ofxGifFrame::~ofxGifFrame(){
 }
 
 void ofxGifFrame::setFromPixels(ofPixels _px, int _left , int _top, float _duration){
-    //rawPixels = _px;
     pixels    = _px;
     left      = _left;
     top       = _top;
     duration  = _duration;
-    
-    tx.allocate(pixels.getWidth(), pixels.getHeight(), ofGetGlInternalFormat(pixels), GL_RGB);
-    //tx.allocate(pixels.getWidth(), pixels.getHeight(), GL_RGB); // rgb for now
+    tx.allocate(pixels.getWidth(), pixels.getHeight(), ofGetGlInternalFormat(pixels), GL_RGBA);
     tx.loadData(pixels);
 }
 
-void ofxGifFrame::setFromGifPixels(ofPixels _constructedPx, ofPixels &_rawPx , int _left , int _top, float _duration){
+void ofxGifFrame::setFromGifPixels(ofPixels _constructedPx, ofPixels _rawPx , int _left , int _top, float _duration){
     pixels   = _constructedPx;
     rawPixels = _rawPx;
     left     = _left;
     top      = _top;
     duration = _duration;
     
-    tx.allocate(pixels.getWidth(), pixels.getHeight(), ofGetGlInternalFormat(pixels), GL_RGB);
-    //tx.allocate(pixels.getWidth(), pixels.getHeight(), GL_RGB); // rgb for now
+    tx.allocate(pixels.getWidth(), pixels.getHeight(), ofGetGlInternalFormat(pixels), GL_RGBA);
     tx.loadData(pixels);
 }
 

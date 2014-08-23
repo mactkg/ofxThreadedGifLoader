@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#include "ofxThreadedGIFDecoder.h"
+#include "ofxThreadedGifDecoder.h"
 //#include "FreeImage.h"
 #define DWORD uint32_t
 
