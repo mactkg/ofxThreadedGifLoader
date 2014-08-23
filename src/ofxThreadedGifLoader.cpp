@@ -1,4 +1,11 @@
-#include "ofxThreadedGIFLoader.h"
+//  ofxThreadedGifLoader.cpp
+//  ofxThreadedGifLoader
+//
+//  almost code from jesusgollonet/ofxGifDecoder
+//  MIT
+//
+
+#include "ofxThreadedGifLoader.h"
 #include <sstream>
 
 ofEvent<ofxGifLoadedEvent> ofxGifLoadedEvent::events;

@@ -1,9 +1,9 @@
 //
 //  ofxThreadedGifDecoder.cpp
-//  gifPhasing
+//  ofxThreadedGifLoader
 //
-//  Created by Jesus Gollonet on 5/14/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  almost code from jesusgollonet/ofxGifDecoder
+//  MIT
 //
 
 #include "ofxThreadedGifDecoder.h"

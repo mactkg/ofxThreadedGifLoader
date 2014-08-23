@@ -1,3 +1,11 @@
+//  ofxThreadedGifLoader.h
+//  ofxThreadedGifLoader
+//
+//  almost code from jesusgollonet/ofxGifDecoder
+//  MIT
+//
+
+
 #ifndef OFX_THREADED_GIF_LOADER_H
 #define OFX_THREADED_GIF_LOADER_H
 

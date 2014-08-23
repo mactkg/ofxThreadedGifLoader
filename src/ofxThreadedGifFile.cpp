@@ -2,11 +2,10 @@
 //  ofxThreadedGifFile.cpp
 //  ofxThreadedGifLoader
 //
-//  code from Jesus.Gollonet on 9/5/11, jesusgollonet/ofxGifDecoder
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  almost code from jesusgollonet/ofxGifDecoder
+//  MIT
 
-#include "ofxThreadedGIFFile.h"
+#include "ofxThreadedGifFile.h"
 
 
 

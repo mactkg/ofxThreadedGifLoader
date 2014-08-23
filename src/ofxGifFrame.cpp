@@ -1,9 +1,9 @@
 //
 //  ofxGifFrame.cpp
-//  ofxGifDecoderAddon
+//  ofxThreadedGifLoader
 //
-//  Created by Jesus.Gollonet on 9/5/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  almost code from jesusgollonet/ofxGifDecoder
+//  MIT
 //
 
 #include "ofxGifFrame.h"
