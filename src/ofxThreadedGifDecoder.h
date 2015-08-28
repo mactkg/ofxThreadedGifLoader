@@ -21,6 +21,8 @@ public:
     bool decode(string fileName);
     ofxThreadedGifFile getFile();
     
+    void clear();
+    
     vector<ofPixels *> pxs;    
     vector <ofColor> palette;
     

@@ -34,6 +34,8 @@ public:
     int getLeft();
     int getTop();
     
+    void clear();
+    
 private:
     int top;
     int left;

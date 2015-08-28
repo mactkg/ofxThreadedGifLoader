@@ -14,7 +14,10 @@ ofxGifFrame::ofxGifFrame(){
 }
 
 ofxGifFrame::~ofxGifFrame(){
+    pixels.clear();
+    rawPixels.clear();
     tx.clear();
+    palette.clear();
 }
 
 void ofxGifFrame::setFromPixels(ofPixels _px, int _left , int _top, float _duration){
@@ -68,4 +71,11 @@ void ofxGifFrame::draw(float _x, float _y){
 
 void ofxGifFrame::draw(float _x, float _y, int _w, int _h){
     tx.draw(_x, _y, _w, _h);
+}
+
+void ofxGifFrame::clear(){
+    pixels.clear();
+    rawPixels.clear();
+    tx.clear();
+    palette.clear();
 }

@@ -52,6 +52,20 @@ void ofxThreadedGifLoader::loadFromDisk(string filename) {
     }
 }
 
+//--------------------------------------------------------------
+void ofxThreadedGifLoader::clear() {
+    decoder.clear();
+    for(int i=0; i<images_async_loading.size(); i++){
+        images_async_loading[i].gif.clear();
+    }
+    for(int i=0; i<images_to_load_buffer.size(); i++){
+        images_to_load_buffer[i].gif.clear();
+    }
+    for(int i=0; i<images_to_update.size(); i++){
+        images_to_update[i].gif.clear();
+    }
+}
+
 
 // Load an url asynchronously from an url.
 //--------------------------------------------------------------

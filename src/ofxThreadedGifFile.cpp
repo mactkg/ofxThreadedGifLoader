@@ -184,6 +184,14 @@ vector <ofColor> ofxThreadedGifFile::getPalette(){
 }
 
 void ofxThreadedGifFile::clear() {
+    for(int i=0; i<gifFrames.size(); i++){
+        gifFrames[i].clear();
+    }
     gifFrames.clear();
+    for(int i=0; i<gpuQueue.size(); i++){
+        gpuQueue[i].px.clear();
+    }
+    gpuQueue.clear();
     globalPalette.clear();
+    accumPx.clear();
 }
