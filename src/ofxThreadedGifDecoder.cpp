@@ -94,8 +94,6 @@ void ofxThreadedGifDecoder::createGifFile(FIBITMAP * bmp, int _nPages){
     if(FreeImage_GetBackgroundColor(bmp, &bgColor)){
        gifFile.setBackgroundColor(ofColor(bgColor.rgbRed, bgColor.rgbGreen, bgColor.rgbBlue));
     }
-    
-    delete tag;
 }
 
 void ofxThreadedGifDecoder::processFrame(FIBITMAP * bmp, int _frameNum){
@@ -164,9 +162,7 @@ void ofxThreadedGifDecoder::processFrame(FIBITMAP * bmp, int _frameNum){
 		ofLogError() << "ofImage::putBmpIntoPixels() unable to set ofPixels from FIBITMAP";
 	}
     
-    delete tag;
     pix.clear();
-    delete bmpConverted;
 }
 
 void ofxThreadedGifDecoder::reset(){
