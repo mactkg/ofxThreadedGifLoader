@@ -33,8 +33,8 @@ public:
 
 	void loadFromDisk(string file);
 	//void loadFromURL(ofxGifFile& gif, string url);
-
-
+    
+    void clear();
 
 private:
 	void update(ofEventArgs & a);

@@ -58,7 +58,7 @@ bool ofxThreadedGifDecoder::decode(string fileName) {
         FreeImage_CloseMultiBitmap(multiBmp, 0);
     }else {
         ofLog(OF_LOG_WARNING, "ofxThreadedGifDecoder::decode. there was an error processing.");
-	}    
+	}
     return bDecoded;
 }
 
@@ -161,12 +161,24 @@ void ofxThreadedGifDecoder::processFrame(FIBITMAP * bmp, int _frameNum){
 	} else {
 		ofLogError() << "ofImage::putBmpIntoPixels() unable to set ofPixels from FIBITMAP";
 	}
+    
+    FreeImage_Unload(bmp);
+    pix.clear();
 }
 
 void ofxThreadedGifDecoder::reset(){
     gifFile.clear();
+}
+
+void ofxThreadedGifDecoder::clear(){
+    gifFile.clear();
+    for(int i=0; i<pxs.size(); i++){
+        pxs[i]->clear();
+        delete pxs[i];
+    }
     pxs.clear();
     palette.clear();
+    delete globalPalette;
 }
 
 
