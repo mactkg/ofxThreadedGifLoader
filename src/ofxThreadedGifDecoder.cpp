@@ -162,6 +162,7 @@ void ofxThreadedGifDecoder::processFrame(FIBITMAP * bmp, int _frameNum){
 		ofLogError() << "ofImage::putBmpIntoPixels() unable to set ofPixels from FIBITMAP";
 	}
     
+    FreeImage_Unload(bmp);
     pix.clear();
 }
 
